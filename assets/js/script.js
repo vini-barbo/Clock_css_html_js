@@ -5,10 +5,11 @@ const milliseconds = document.getElementById('milliseconds')
 
 const clock = setInterval(function time() {
     let dateToday = new Date();
-    let hr = dateToday.hours();
-    let min = dateToday.minutes();
+    let hr = dateToday.getHours();
+    let min = dateToday.getMinutes();
     let sec = dateToday.getSeconds();
-    let msec = dateToday.milliseconds();
+    let msec = dateToday.getMilliseconds();
+
 
     if (hr<10) hr = '0' + hr;
 
